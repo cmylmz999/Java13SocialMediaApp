@@ -1,0 +1,13 @@
+server:
+  port: 7071
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27020
+      username: java13user
+      password: root
+      database: userDB
+
+
