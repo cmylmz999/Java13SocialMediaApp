@@ -59,7 +59,7 @@ public class JwtTokenManager {
 
         } catch (Exception e){
             System.out.println(e.getMessage());
-            return Optional.empty();
+            throw new AuthManagerException(ErrorType.TOKEN_CREATE_ERROR);
         }
     }
 

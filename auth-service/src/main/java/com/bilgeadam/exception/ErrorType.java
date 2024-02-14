@@ -14,7 +14,9 @@ public enum ErrorType {
     USERNAME_DUPLICATE(4111,"Böyle bir kullanici adi sistemde mevcut...", HttpStatus.BAD_REQUEST),
     USER_NOT_FOUND(4112,"Böyle bir kullanici bulunamadi...",HttpStatus.BAD_REQUEST),
     ACTIVATION_CODE_ERROR(4113,"Aktivasyon kod hatasi..." ,HttpStatus.BAD_REQUEST ),
-    INVALID_TOKEN(4114,"Geçersiz token" ,HttpStatus.BAD_REQUEST);
+    INVALID_TOKEN(4114,"Geçersiz token" ,HttpStatus.BAD_REQUEST),
+    USER_NOT_ACTIVATED(4115,"Kullanici aktif degil..." ,HttpStatus.BAD_REQUEST ),
+    TOKEN_CREATE_ERROR(4116,"Token olusturulamadi..." ,HttpStatus.BAD_REQUEST );
 
 
     private int code;

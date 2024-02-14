@@ -12,6 +12,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 import static com.bilgeadam.constant.RestApiUrls.*;
 @RestController
 @RequiredArgsConstructor
@@ -27,7 +29,7 @@ public class AuthController {
     }
 
     @PostMapping(LOGIN)
-    public ResponseEntity<Boolean> login(@RequestBody LoginRequestDto dto){
+    public ResponseEntity<String> login(@RequestBody LoginRequestDto dto){
         return ResponseEntity.ok(authService.login(dto));
     }
 
